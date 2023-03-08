@@ -1,0 +1,14 @@
+namespace com.mycompany.dq
+
+import com.linkedin.common.Urn
+
+record TestItem {
+
+  urn: Urn
+
+  @TimeseriesField = {}
+  name: string
+
+  @TimeseriesField = {}
+  count: long
+}

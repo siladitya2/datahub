@@ -1,0 +1,11 @@
+namespace com.mycompany.dq
+import com.linkedin.timeseries.TimeseriesAspectBase
+
+@Aspect = {
+  "name": "datasetTimeSeriesTest",
+  "type": "timeseries"
+}
+record DatasetTimeSeriesTest includes TimeseriesAspectBase {
+  @TimeseriesFieldCollection = {"key":"urn"}
+  testItems: optional array[TestItem]
+}
